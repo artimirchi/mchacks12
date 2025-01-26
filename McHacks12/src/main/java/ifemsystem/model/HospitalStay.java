@@ -15,7 +15,7 @@ public class HospitalStay
     // ENUMERATIONS
     //------------------------
 
-    public enum Phase { Registered, Triaged, InvestigationPending, Ordered, Pending, Reported }
+//    public enum Phase { Registered, Triaged, InvestigationPending, Ordered, Pending, Reported }
 
     //------------------------
     // MEMBER VARIABLES
@@ -24,7 +24,7 @@ public class HospitalStay
     //HospitalStay Attributes
     private Time arrivalTime;
     private Time avgWaitTime;
-    private Phase phase;
+    private IFEMs.Phase phase;
 
     //HospitalStay Associations
     private List<Queue> queues;
@@ -38,7 +38,7 @@ public class HospitalStay
     // CONSTRUCTOR
     //------------------------
 
-    public HospitalStay(Time aArrivalTime, Phase aPhase, Patient aPatient, IFEMs aIFEMs, Child aChild)
+    public HospitalStay(Time aArrivalTime, IFEMs.Phase aPhase, Patient aPatient, IFEMs aIFEMs, Child aChild)
     {
         arrivalTime = aArrivalTime;
         avgWaitTime = null;
@@ -81,7 +81,7 @@ public class HospitalStay
         return wasSet;
     }
 
-    public boolean setPhase(Phase aPhase)
+    public boolean setPhase(IFEMs.Phase aPhase)
     {
         boolean wasSet = false;
         phase = aPhase;
@@ -99,7 +99,7 @@ public class HospitalStay
         return avgWaitTime;
     }
 
-    public Phase getPhase()
+    public IFEMs.Phase getPhase()
     {
         return phase;
     }

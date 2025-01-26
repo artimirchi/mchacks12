@@ -15,7 +15,7 @@ public class Nurse extends Employee
     // ENUMERATIONS
     //------------------------
 
-    public enum Triage { Resuscitation, Emergent, Urgent, LessUrgent, NonUrgent }
+//    public enum Triage { Resuscitation, Emergent, Urgent, LessUrgent, NonUrgent }
 
     //------------------------
     // MEMBER VARIABLES

@@ -16,7 +16,7 @@ public class Patient extends User
     // ENUMERATIONS
     //------------------------
 
-    public enum Phase { Registered, Triaged, InvestigationPending, Ordered, Pending, Reported }
+//    public enum Phase { Registered, Triaged, InvestigationPending, Ordered, Pending, Reported }
 
     //------------------------
     // STATIC VARIABLES
@@ -165,7 +165,7 @@ public class Patient extends User
         return 0;
     }
     /* Code from template association_AddManyToOne */
-    public HospitalStay addHospitalStay(Time aArrivalTime, Phase aPhase, IFEMs aIFEMs, Child aChild)
+    public HospitalStay addHospitalStay(Time aArrivalTime, IFEMs.Phase aPhase, IFEMs aIFEMs, Child aChild)
     {
         return new HospitalStay(aArrivalTime, aPhase, this, aIFEMs, aChild);
     }

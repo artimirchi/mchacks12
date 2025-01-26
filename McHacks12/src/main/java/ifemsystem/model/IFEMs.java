@@ -15,8 +15,17 @@ public class IFEMs
     // ENUMERATIONS
     //------------------------
 
-    public enum Phase { Registered, Triaged, InvestigationPending, Ordered, Pending, Reported }
-    public enum Triage { Resuscitation, Emergent, Urgent, LessUrgent, NonUrgent }
+//    public enum Phase { Registered, Triaged, InvestigationPending, Ordered, Pending, Reported }
+//    public enum Triage { Resuscitation, Emergent, Urgent, LessUrgent, NonUrgent }
+
+    public enum Phase {Registered, Triaged, InvestigationPending, Ordered, Pending, Reported
+    }
+    public enum InvestigationStatus{
+        Ordered,Pending, Reported
+    }
+    public enum Triage{
+        Resuscitation, Emergent, Urgent, LessUrgent, NonUrgent
+    }
 
     //------------------------
     // MEMBER VARIABLES

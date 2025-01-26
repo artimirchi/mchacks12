@@ -13,14 +13,14 @@ public class AssessmentNurse
     // ENUMERATIONS
     //------------------------
 
-    public enum Triage { Resuscitation, Emergent, Urgent, LessUrgent, NonUrgent }
+//    public enum Triage { Resuscitation, Emergent, Urgent, LessUrgent, NonUrgent }
 
     //------------------------
     // MEMBER VARIABLES
     //------------------------
 
     //AssessmentNurse Attributes
-    private Triage triage;
+    private IFEMs.Triage triage;
 
     //AssessmentNurse Associations
     private Nurse nurse;
@@ -31,7 +31,7 @@ public class AssessmentNurse
     // CONSTRUCTOR
     //------------------------
 
-    public AssessmentNurse(Triage aTriage, Nurse aNurse, HospitalStay aHospitalStay, IFEMs aIFEMs)
+    public AssessmentNurse(IFEMs.Triage aTriage, Nurse aNurse, HospitalStay aHospitalStay, IFEMs aIFEMs)
     {
         triage = aTriage;
         boolean didAddNurse = setNurse(aNurse);
@@ -55,7 +55,7 @@ public class AssessmentNurse
     // INTERFACE
     //------------------------
 
-    public boolean setTriage(Triage aTriage)
+    public boolean setTriage(IFEMs.Triage aTriage)
     {
         boolean wasSet = false;
         triage = aTriage;
@@ -63,7 +63,7 @@ public class AssessmentNurse
         return wasSet;
     }
 
-    public Triage getTriage()
+    public IFEMs.Triage getTriage()
     {
         return triage;
     }

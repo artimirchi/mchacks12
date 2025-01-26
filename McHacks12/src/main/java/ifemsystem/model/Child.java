@@ -16,7 +16,7 @@ public class Child
     // ENUMERATIONS
     //------------------------
 
-    public enum Phase { Registered, Triaged, InvestigationPending, Ordered, Pending, Reported }
+//    public enum Phase { Registered, Triaged, InvestigationPending, Ordered, Pending, Reported }
 
     //------------------------
     // STATIC VARIABLES
@@ -291,7 +291,7 @@ public class Child
         return 0;
     }
     /* Code from template association_AddManyToOne */
-    public HospitalStay addHospitalStay(Time aArrivalTime, Phase aPhase, Patient aPatient, IFEMs aIFEMs)
+    public HospitalStay addHospitalStay(Time aArrivalTime, IFEMs.Phase aPhase, Patient aPatient, IFEMs aIFEMs)
     {
         return new HospitalStay(aArrivalTime, aPhase, aPatient, aIFEMs, this);
     }

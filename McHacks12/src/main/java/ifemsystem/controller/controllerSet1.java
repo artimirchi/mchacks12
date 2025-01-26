@@ -12,7 +12,7 @@ public class controllerSet1 {
     }
 
     public static boolean isCritical() {
-
+        return false;
     }
 
     public static void orderTreatment() {
@@ -24,7 +24,7 @@ public class controllerSet1 {
     }
 
     public static boolean needsFurtherTreatment() {
-
+        return false;
     }
 
 }

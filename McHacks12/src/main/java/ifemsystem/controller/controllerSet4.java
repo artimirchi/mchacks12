@@ -5,7 +5,7 @@ import main.java.ifemsystem.model.*;
 public class controllerSet4 {
 
     public static String registerTest(String aName, String aDescription, Test.InvestigationStatus aStatus) {
-
+        return "";
     }
 
     public static String updateTest(String aName, String aDescription, Test.InvestigationStatus aStatus) {
@@ -17,6 +17,6 @@ public class controllerSet4 {
     }
 
     public static String completeTreatment(String aDescription) {
-
+        return "";
     }
 }
