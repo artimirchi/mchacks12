@@ -1,4 +1,4 @@
-package ifemsystem.model;
+package main.java.ifemsystem.model;
 
 
 /*This code was generated using the UMPLE 1.35.0.7523.c616a4dce modeling language!*/

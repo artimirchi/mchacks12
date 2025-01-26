@@ -1,4 +1,4 @@
-package ifemsystem.model;
+package main.java.ifemsystem.model;
 
 import java.util.*;
 
